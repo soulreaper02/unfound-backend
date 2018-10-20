@@ -94,7 +94,7 @@ module.exports = function (app) {
             for (let i = 0; i < result.length; i ++) {
                  let res = {};
                  res['filename'] = result[i];
-                 res['filepath'] = `http://localhost:9000/public/xml/${result[i]}`;
+                 res['filepath'] = `https://unfound-assignment-one.herokuapp.com/public/xml/${result[i]}`;
                  data.push(res);
             }
             res.status(200).send(data);
