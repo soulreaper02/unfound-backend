@@ -27,6 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 app.use(bodyParser.json()); // parse application/json
 app.set('trust proxy', 1);
 app.use("/public", express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 app.use(cors());
 app.use(fileUpload());
 
